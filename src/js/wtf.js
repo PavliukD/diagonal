@@ -8,7 +8,7 @@ export default function Wtf() {
 
     for (let i = 0; i < list.children.length; i++){
 
-        const offset = corner.offsetWidth - ((corner.offsetHeight - (list.children[i].offsetTop + (list.children[0].clientHeight / 2))) / tg) + (list.children[0].clientHeight / 2)
+        const offset = corner.offsetWidth - ((corner.offsetHeight - (list.children[i].offsetTop + (list.children[0].clientHeight / 2))) / tg) + (list.children[0].clientHeight / 2 )
         console.log(offset)
 
         list.children[i].style.marginLeft = `-${offset}px`
