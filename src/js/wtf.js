@@ -1,4 +1,11 @@
 export default function Wtf() {
+    Resize()
+    window.addEventListener('resize', () => {
+        Resize()
+    })
+}
+
+const Resize = () => {
     const block = document.querySelector('.right-block')
     const corner = document.querySelector('.corner')
     const list = block.querySelector('ul')
